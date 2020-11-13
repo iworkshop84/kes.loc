@@ -2102,3 +2102,76 @@ form.comments_form button{
 }
 
 
+/*Tabulator Tables*/
+
+
+.tabulator{
+    height: 100% !important;
+    background-color: unset !important;
+}
+
+#data-table{
+    padding: 10px !important;
+    border-top: 2px solid #59a44e !important;
+    border: 2px solid #59a44e;
+    border-radius: 10px;
+}
+
+.btnPanel button{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    padding: 5px 20px;
+    margin: 10px 5px 10px 0;
+    background-color: #59a44e;
+    border-radius: 5px;
+    font-weight: 700;
+    border: 1px solid #59a44e;
+    transition: all 0.3s ease;
+}
+
+.btnPanel button:hover{
+    color: #59a44e;
+    border: 1px solid #59a44e;
+    background-color: white;
+}
+
+.tabulator{
+    border: 1px solid #59a44e !important;
+    border-radius: 5px;
+}
+
+.tabulator-headers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.tabulator .tabulator-header{
+    background-color: #888;
+}
+
+/*Это поле будет перебивать настройки высоты задаваеммые в коде, если будет мешать, его можно удалить
+и заменить выставляю высоту в блоке JS*/
+.tabulator .tabulator-header .tabulator-col{
+
+    height: 80px !important;
+
+    background-color: unset;
+    border-right: 1px solid rgba(255, 255, 255, 0.7) !important;
+}
+
+.tabulator-col-title{
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.tabulator-header-filter input[type='search']{
+    height: 30px !important;
+}
+
+.tabulator-header-filter input::placeholder{
+    font-size: 16px;
+}
