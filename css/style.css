@@ -338,6 +338,7 @@ input, textarea{
     .header__menu.active__menu{
         display: block;
         right: 0;
+        overflow: scroll;
     }
 
     .header__menu_list{
@@ -599,7 +600,7 @@ input, textarea{
 @media (max-width: 576px) {
     .header__links{
         padding: 5px 0;
-        flex: 0 0 80px;
+        flex: 0 0 90px;
         margin-left: 0;
         text-align: center;
     }
@@ -1219,10 +1220,10 @@ a.broad:before{
     color: #59a44e;
     text-decoration: none;
 }
-/*Для страницы списка видео, тут можно указать и второй вариант, но тогда будет рамка у видео*/
+/*Для страницы списка видео*/
 .content_img_wrapper .content_img video{
-    max-width:100%;
-    /*width: 100%;*/
+    max-width:270px;
+    width: 100%;
 }
 
 .content_text_block{
@@ -1627,6 +1628,7 @@ a.broad:before{
 .single__menu_block.active__menu{
     display: block;
     left: 0;
+    overflow: scroll;
 }
 
 .single__page .top_sidebar, .single__page .bottom_sidebar{
@@ -1731,6 +1733,13 @@ a.broad:before{
     margin: 10px 0;
 }
 
+.sidebar__video_img_wrapper video{
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 170px;
+}
+
 @media (max-width: 1660px){
     .sidebar__video_img_wrapper img{
         max-width: 190px;
@@ -1761,6 +1770,13 @@ a.broad:before{
 
 .video__block img{
     width: 100%;
+}
+
+/*Для страницы отдельного видео*/
+.video__block video{
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
 }
 
 .video__content_item{
@@ -1820,6 +1836,11 @@ a.broad:before{
     margin-left: auto;
     display: flex;
     justify-content: flex-end;
+}
+
+/*Страница видео, для отступы для лайков*/
+.video__likes .fas{
+    margin: 0 10px;
 }
 
 
