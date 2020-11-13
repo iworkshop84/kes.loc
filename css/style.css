@@ -1219,6 +1219,11 @@ a.broad:before{
     color: #59a44e;
     text-decoration: none;
 }
+/*Для страницы списка видео, тут можно указать и второй вариант, но тогда будет рамка у видео*/
+.content_img_wrapper .content_img video{
+    max-width:100%;
+    /*width: 100%;*/
+}
 
 .content_text_block{
     width: 100%;
